@@ -38,5 +38,6 @@ if RankBound(Jacobian(E)) ne 0 then
             end for;
     end if;
 end if;
+end if;
 return RationalPoints_on_C;
 end function; 
