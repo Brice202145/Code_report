@@ -20,7 +20,7 @@ if RankBound(Jacobian(E)) ne 0 then
    //if the rank of J is zero we use ChabautyJ to calculate H(Q) via Chabauty0 and for any point of H uses the pullback of m2
     if RankBound(J) eq 0 then  
         RationalPoints_on_H:=Chabauty0(J);
-        for i in [1..#H(Q)] do
+        for i in [1..#RationalPoints_on_H] do
             RationalPoints_on_C:=RationalPoints(Difference(Pullback(m2, RationalPoints_on_H[i]), BaseScheme(m2)));
         end for; 
     // if the rank of J is 1 we use ChabautyJ to calculate H(Q) via Chabauty0 and for any point of H we use the pullback of m2
