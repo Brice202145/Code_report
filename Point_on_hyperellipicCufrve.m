@@ -14,7 +14,7 @@ G2 := AutomorphismGroup(C,[phi2]);
 E, m1 := CurveQuotient(G1);
 H, m2 := CurveQuotient(G2);
 //J is the Jacobian of H of dimension Genus(H)
-J:=Jacobian(D);
+J:=Jacobian(H);
 //Si le rang de E n'est pas zéros alors on calcule celui de J
 if RankBound(Jacobian(E)) ne 0 then
    //if the rank of J is zero we use ChabautyJ to calculate H(Q) via Chabauty0 and for any point of H uses the pullback of m2
